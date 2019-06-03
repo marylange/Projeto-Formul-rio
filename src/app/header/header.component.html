@@ -1,68 +1,74 @@
-
-<form>
-	<fieldset>
-	<legend>Dados Pessoais</legend>
-		<div class="form-row ">
-				<div class="col">
-							<label>Nome Completo: <input type="text" required></label>
-				</div>
-		<div class="col">
-			<label>Email: <input type="email" class="form-control" id="inlineFormInputEmail" ng-model="email" placeholder="email@exemplo.com"
-						required></label>
-		</div>
-		<div class="col">
-			<label>Telefone: <input type="text" class="form-control" id="inLineFormInputTelefone" ng-model="telefone"></label>
-		</div>
-		<div class="form-group">
-			<label>Logradouro: <input type="text" class="form-control" placeholder="Ex: rua, avenida"></label><br>
-			<label>Nº <input type="text" class="form-control" ></label><br>
-			<label>Localidade: <input type="text" class="form-control" placeholder="Ex: bairro"></label><br>
-			<div class="form-group col-md-4">
-					<label for="inputEstado">Estado</label>
-					<select id="inputEstado" class="form-control">
-						<option selected>Escolher...</option>
-						<option>Acre</option>
-						<option>Alagoas</option>
-						<option>Amapá</option>
-						<option>Amazonas</option>
-						<option>Bahia</option>
-						<option>Ceará</option>
-						<option>Distrito Federal</option>
-						<option>Espírito Santo</option>
-						<option>Goiás</option>
-						<option>Maranhão</option>
-						<option>Mato Grosso</option>
-						<option>Mato Grosso do Sul</option>
-						<option>Minas Gerais</option>
-						<option>Pará</option>
-						<option>Paraíba</option>
-						<option>Paraná</option>
-						<option>Pernambuco</option>
-						<option>Piauí</option>
-						<option>Rio de Janeiro</option>
-						<option>Rio Grande do Norte</option>
-						<option>Rio Grande do Sul</option>
-						<option>Rondônia</option>
-						<option>Roraima</option>
-						<option>Santa Catarina</option>
-						<option>São Paulo</option>
-						<option>Sergipe</option>
-						<option>Tocantins</option>
-
-					</select>
-				</div>
-			<label>Cidade: <input type="text" class="form-control" ></label><br>
-			<label>CEP <input type="text" class="form-control" placeholder="CEP"></label><br>
-		</div>
-		<div class="col">
-				<label>Observação do contato <br>
-					<textarea name="mensagem" class="form-control" required></textarea>
-				</label>
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+	<script type="text/javascript" src='./header.component.html'></script>
+</head>
+<body>
+	<form>
+		<fieldset>
+		<legend>Dados Pessoais</legend>
+			<div class="form-row ">
+					<div class="col">
+								<label>Nome Completo: <input type="text" required></label>
+					</div>
+			<div class="col">
+				<label>Email: <input type="email" class="form-control" id="inlineFormInputEmail" ng-model="email" placeholder="email@exemplo.com"
+							required></label>
 			</div>
-		<div class="col">
-			<button type="submit" class="btn btn-primary" (click)="onClickMe()">Entrar</button>
-			<button type="reset" value="Reset">Apagar</button>
-		</div>
-		</div>
-	</fieldset>
-</form>
+			<div class="col">
+				<label>Telefone: <input type="text" class="form-control" id="inLineFormInputTelefone" ng-model="telefone"></label>
+			</div>
+			<div class="form-group">
+				<label>Logradouro: <input type="text" class="form-control" placeholder="Ex: rua, avenida"></label><br>
+				<label>Nº <input type="text" class="form-control" ></label><br>
+				<label>Localidade: <input type="text" class="form-control" placeholder="Ex: bairro"></label><br>
+				<div class="form-group col-md-4">
+						<label for="inputEstado">Estado</label>
+						<select id="inputEstado" class="form-control">
+							<option selected>Escolher...</option>
+							<option>Acre</option>
+							<option>Alagoas</option>
+							<option>Amapá</option>
+							<option>Amazonas</option>
+							<option>Bahia</option>
+							<option>Ceará</option>
+							<option>Distrito Federal</option>
+							<option>Espírito Santo</option>
+							<option>Goiás</option>
+							<option>Maranhão</option>
+							<option>Mato Grosso</option>
+							<option>Mato Grosso do Sul</option>
+							<option>Minas Gerais</option>
+							<option>Pará</option>
+							<option>Paraíba</option>
+							<option>Paraná</option>
+							<option>Pernambuco</option>
+							<option>Piauí</option>
+							<option>Rio de Janeiro</option>
+							<option>Rio Grande do Norte</option>
+							<option>Rio Grande do Sul</option>
+							<option>Rondônia</option>
+							<option>Roraima</option>
+							<option>Santa Catarina</option>
+							<option>São Paulo</option>
+							<option>Sergipe</option>
+							<option>Tocantins</option>
+
+						</select>
+					</div>
+				<label>Cidade: <input type="text" class="form-control" ></label><br>
+				<label>CEP <input type="text" class="form-control" placeholder="CEP"></label><br>
+			</div>
+			<div class="col">
+					<label>Observação do contato <br>
+						<textarea name="mensagem" class="form-control" required></textarea>
+					</label>
+				</div>
+			<div class="col">
+				<button type="submit" class="btn btn-primary" (click)="onClickMe()">Entrar</button>
+				<button type="reset" value="Reset">Apagar</button>
+			</div>
+			</div>
+		</fieldset>
+	</form>
+</body>
